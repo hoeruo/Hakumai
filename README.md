@@ -1,12 +1,11 @@
 # Hakumai
-Rice organization system.
 
-## Add the following to your .Xresources:
+## What is Hakumai?
+Hakumai is a rice organization system.
+It currently supports colorschemes for urxvt.
 
-`#include "/path/to/your/colors/"`
+## Planned features
+See [TODO](https://github.com/SkyCorp/Hakumai/blob/master/TODO).
 
-Example: $HOME/.hakumai/colors/vacuous
-
-`#include "/path/to/.hakumai/lib/rainbow"`
-
-NOTE: This must come after your colors.
+## Others
+Feel free to submit feedback! And as always, use the issues tracker if you run into any nasty bugs.
