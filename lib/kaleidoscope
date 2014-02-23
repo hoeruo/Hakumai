@@ -1,23 +1,26 @@
 #!/usr/bin/env bash
+# Script to convert colorschemes to Hakumai.
+# Usage: kaleidoscope <file>
+
 if [[ -n "$@" ]]; then
 	touch $@.hk
 	grep ground $@ | sed 2q | sed s/URxvt\[.\*\]/\*/I >> $@.hk
-	grep color0 $@ | sed s/\*color0/\#define\ black/ >> $@.hk
-	grep color1 $@ | sed 1q| sed s/\*color1/\#define\ red/ >> $@.hk
-	grep color2 $@ | sed s/\*color2/\#define\ green/ >> $@.hk
-	grep color3 $@ | sed s/\*color3/\#define\ yellow/ >> $@.hk
-	grep color4 $@ | sed s/\*color4/\#define\ blue/ >> $@.hk
-	grep color5 $@ | sed s/\*color5/\#define\ magenta/ >> $@.hk
-	grep color6 $@ | sed s/\*color6/\#define\ cyan/ >> $@.hk
-	grep color7 $@ | sed s/\*color7/\#define\ grey/ >> $@.hk
-	grep color8 $@ | sed s/\*color8/\#define\ lightblack/ >> $@.hk
-	grep color9 $@ | sed s/\*color9/\#define\ lightred/ >> $@.hk
-	grep color10 $@ | sed s/\*color10/\#define\ lightgreen/ >> $@.hk
-	grep color11 $@ | sed s/\*color11/\#define\ lightyellow/ >> $@.hk
-	grep color12 $@ | sed s/\*color12/\#define\ lightblue/ >> $@.hk
-	grep color13 $@ | sed s/\*color13/\#define\ lightmagenta/ >> $@.hk
-	grep color14 $@ | sed s/\*color14/\#define\ lightcyan/ >> $@.hk
-	grep color15 $@ | sed s/\*color15/\#define\ white/ >> $@.hk
+	grep color0 $@ | sed s/\*color0:/\#define\ black/ >> $@.hk
+	grep color1 $@ | sed 1q | sed s/\*color1:/\#define\ red/ >> $@.hk
+	grep color2 $@ | sed s/\*color2:/\#define\ green/ >> $@.hk
+	grep color3 $@ | sed s/\*color3:/\#define\ yellow/ >> $@.hk
+	grep color4 $@ | sed s/\*color4:/\#define\ blue/ >> $@.hk
+	grep color5 $@ | sed s/\*color5:/\#define\ magenta/ >> $@.hk
+	grep color6 $@ | sed s/\*color6:/\#define\ cyan/ >> $@.hk
+	grep color7 $@ | sed s/\*color7:/\#define\ grey/ >> $@.hk
+	grep color8 $@ | sed s/\*color8:/\#define\ lightblack/ >> $@.hk
+	grep color9 $@ | sed s/\*color9:/\#define\ lightred/ >> $@.hk
+	grep color10 $@ | sed s/\*color10:/\#define\ lightgreen/ >> $@.hk
+	grep color11 $@ | sed s/\*color11:/\#define\ lightyellow/ >> $@.hk
+	grep color12 $@ | sed s/\*color12:/\#define\ lightblue/ >> $@.hk
+	grep color13 $@ | sed s/\*color13:/\#define\ lightmagenta/ >> $@.hk
+	grep color14 $@ | sed s/\*color14:/\#define\ lightcyan/ >> $@.hk
+	grep color15 $@ | sed s/\*color15:/\#define\ white/ >> $@.hk
 	echo "New file created under $@.hk!"
 	exit 0
 else
