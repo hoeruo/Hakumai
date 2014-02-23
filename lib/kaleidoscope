@@ -1,9 +1,25 @@
 #!/usr/bin/env bash
-# Script to convert old colorschemes to Hakumai.
-
 if [[ -n "$@" ]]; then
-	sed -e s/[.*]color/\#define/ -e s/[Uu][Rr]xvt[.*]// -e s/[Uu][Rr]xvt// -e s/define0:/define\ black/ -e s/define2:/define\ green/ -e s/define3:/define\ yellow/ -e s/define4:/define\ blue/ -e s/define5:/define\ magenta/ -e s/define6:/define\ cyan/ -e s/define7:/define\ grey/ -e s/define8:/define\ lightblack/ -e s/define9:/define\ lightred/ -e s/define10:/define\ lightgreen/ -e s/define11:/define\ lightyellow/ -e s/define12:/define\ lightblue/ -e s/define13:/define\ lightmagenta/ -e s/define14:/define\ lightcyan/ -e s/define15:/define\ white/ -e s/define1:/define\ red/ -e s/.fo/\*fo/ -e s/.ba/\*ba/ -e s/fo/\*fo/ -e s/ba/\*ba/ $@ > $@.hk
+	touch $@.hk
+	grep ground $@ | sed 2q | sed s/URxvt\[.\*\]/\*/I >> $@.hk
+	grep color0 $@ | sed 1q | sed s/\*color0/\#define\ black/ >> $@.hk
+	grep color1 $@ | sed 1q | sed s/\*color1/\#define\ red/ >> $@.hk
+	grep color2 $@ | sed 1q | sed s/\*color2/\#define\ green/ >> $@.hk
+	grep color3 $@ | sed 1q | sed s/\*color3/\#define\ yellow/ >> $@.hk
+	grep color4 $@ | sed 1q | sed s/\*color4/\#define\ blue/ >> $@.hk
+	grep color5 $@ | sed 1q | sed s/\*color5/\#define\ magenta/ >> $@.hk
+	grep color6 $@ | sed 1q | sed s/\*color6/\#define\ cyan/ >> $@.hk
+	grep color7 $@ | sed 1q | sed s/\*color7/\#define\ grey/ >> $@.hk
+	grep color8 $@ | sed 1q | sed s/\*color8/\#define\ lightblack/ >> $@.hk
+	grep color9 $@ | sed 1q | sed s/\*color9/\#define\ lightred/ >> $@.hk
+	grep color10 $@ | sed 1q | sed s/\*color10/\#define\ lightgreen/ >> $@.hk
+	grep color11 $@ | sed 1q | sed s/\*color11/\#define\ lightyellow/ >> $@.hk
+	grep color12 $@ | sed 1q | sed s/\*color12/\#define\ lightblue/ >> $@.hk
+	grep color13 $@ | sed 1q | sed s/\*color13/\#define\ lightmagenta/ >> $@.hk
+	grep color14 $@ | sed 1q | sed s/\*color14/\#define\ lightcyan/ >> $@.hk
+	grep color15 $@ | sed 1q | sed s/\*color15/\#define\ white/ >> $@.hk
 	echo "New file created under $@.hk!"
+	exit 0
 else
 	echo "You must supply a filename!"
 	exit 1
