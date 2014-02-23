@@ -1,0 +1,20 @@
+!Name:				Vanilla Taffy
+!Author:			hal
+*foreground:			#707070
+*background:			#f3f3f3
+#define black			#d3d3d3
+#define red			#ff807a
+#define green			#b4c158
+#define yellow			#f59335
+#define blue			#bbdbe2
+#define magenta			#fec7cd
+#define cyan			#95c1c0
+#define grey			#707070
+#define white			#909090
+#define lightblack		#b3b3b3
+#define lightred		#ff605a
+#define lightgreen		#94c138
+#define lightyellow		#f59335
+#define lightblue		#9bbbe2
+#define lightmagenta		#d2a4b4
+#define lightcyan		#75A1A0
