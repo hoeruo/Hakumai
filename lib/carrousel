@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#Use a different colorscheme with hakumai.
+
+if [[ -n "$@" ]]; then
+	cp ~/.Xresources /tmp/hakumai
+	echo "#include \"/usr/kori/.hakumai/colors/$@\"" >> /tmp/hakumai
+	echo "#include \"/usr/kori/.hakumai/lib/rainbow\"" >> /tmp/hakumai
+	xrdb -quiet /tmp/hakumai
+else
+	echo "You must supply a colorscheme!"
+	exit 1
+fi
