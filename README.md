@@ -1,7 +1,8 @@
 # Hakumai Devel
 
 ## What is Hakumai Devel?
-Development branch for Hakumai
+Development branch for Hakumai.
+
 Changes will now be tested here.
 
 ## Planned features
