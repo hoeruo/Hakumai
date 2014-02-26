@@ -1,0 +1,30 @@
+! Configuration for Hakumai
+
+! Fonts
+
+*font:\
+xft:Inconsolata:pixelsize=16:antialias=false,\
+xft:WenQuanYi Zen Hei Mono:pixelsize=16,\
+xft:Baekmuk Dotum:pixelsize=16:antialias=false
+
+*boldFont:\
+xft:Inconsolata:pixelsize=16:antialias=false,\
+xft:WenQuanYi Zen Hei Mono:pixelsize=16, \
+xft:Baekmuk Dotum:pixelsize=16:antialias=false
+
+! BORING settings.
+*scrollBar:			false
+*geometry:          80x21
+
+! Xft settings
+Xft.dpi:			96
+Xft.antialias:		true
+Xft.rgba:			vrgb
+Xft.hinting:		true
+Xft.hintstyle:		full
+
+! Colorscheme. this should be set with carrousel.
+#include "/usr/kori/.hakumai/colors/rainbow"
+
+! And last but not least, the translator from hakumai format into Xresources.
+#include "/usr/kori/.hakumai/lib/transpose"

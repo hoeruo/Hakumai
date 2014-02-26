@@ -1,0 +1,20 @@
+!Name:				
+!Author:			
+*foreground:			
+*background:			
+#define black			
+#define red			
+#define green			
+#define yellow			
+#define blue			
+#define magenta			
+#define cyan			
+#define grey			
+#define white			
+#define lightblack		
+#define lightred		
+#define lightgreen		
+#define lightyellow		
+#define lightblue		
+#define lightmagenta
+#define lightcyan		

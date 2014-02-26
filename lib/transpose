@@ -1,4 +1,7 @@
 ! Translator from hakumai to Xresources format
+
+! Colors
+
 *color0:	black
 *color1:	red
 *color2:	green
