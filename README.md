@@ -21,6 +21,6 @@ NOTE: This MUST come after your colorscheme.
 ## Others
 Feel free to submit feedback! And as always, use the issues tracker if you run into any nasty bugs.
 
-Notes: included under `lib/` is `kaleidoscope`, a tool to convert colorschemes from Xresources format to Hakumai.
+Notes: included under `bin/` is `kaleidoscope`, a tool to convert colorschemes from Xresources format to Hakumai.
 
 `kaleidoscope` is still very new and has bugs, please report any you find.
