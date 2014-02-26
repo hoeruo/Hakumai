@@ -4,7 +4,7 @@
 
 
 if [[ -n "$@" ]]; then
-	sed s/rainbow/'$@'/ ~/.hakumai/hakumai.rc | xrdb -
+	sed 's/rainbow/'$@'/' ~/.hakumai/hakumai.rc | xrdb -
 else
 	echo "You must supply a colorscheme!"
 	exit 1
