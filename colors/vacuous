@@ -1,10 +1,10 @@
-!Name:				Vacuous
-!Author:			hal
+!Name:					Vacuous
+!Author:				hal
 
 *background:			#0d0b0d
 *foreground:			#f3e7c6
 #define black			#1e2f41
-#define red			#84252c
+#define red				#84252c
 #define green			#87a581
 #define yellow			#d6c08f
 #define magenta			#143a58
@@ -15,7 +15,7 @@
 #define lightred		#c92831
 #define lightgreen		#c0bd86
 #define lightyellow		#f1deb7
-#define lightmagenta		#1a4C72
+#define lightmagenta	#1a4C72
 #define lightblue		#7c1c3b
 #define lightcyan		#659a91
 #define white			#f3dcc6
