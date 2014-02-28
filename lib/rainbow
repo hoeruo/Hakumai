@@ -1,0 +1,20 @@
+! Translator for the colorschemes.
+
+! Colors
+
+*color0:	black
+*color1:	red
+*color2:	green
+*color3:	yellow
+*color4:	blue
+*color5:	magenta
+*color6:	cyan
+*color7:	grey
+*color8:	lightblack
+*color9:	lightred
+*color10:	lightgreen
+*color11:	lightyellow
+*color12:	lightblue
+*color13:	lightmagenta
+*color14:	lightcyan
+*color15:	white
