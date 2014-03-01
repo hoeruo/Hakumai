@@ -1,0 +1,31 @@
+echo "\
+! Configuration for Hakumai
+
+!Allows for custom syntax.
+#include \"$HOME/.hakumai/lib/transpose\"
+
+! Colorscheme. if you would like to use carrousel, use Spectrum
+#include \"$HOME/.hakumai/colors/spectrum\"
+
+! Colorscheme translator.
+#include \"$HOME/.hakumai/lib/rainbow\"
+
+! Xft settings.
+#include \"$HOME/.hakumai/lib/infinity\"
+
+Fonts \\
+xft:Tewi:pixelsize=11:antialias=false, \\
+xft:WenQuanYi Zen Hei Mono:pixelsize=11, \\
+xft:Baekmuk Dotum:pixelsize=11:antialias=false
+
+BoldFonts \\
+xft:Tewi:pixelsize=11:antialias=false, \\
+xft:WenQuanYi Zen Hei Mono:pixelsize=11, \\
+xft:Baekmuk Dotum:pixelsize=11:antialias=false
+
+! BORING settings.
+*scrollBar:			false
+*geometry:          80x21
+" > ~/.hakumai/hakumai.rc;
+echo done;
+exit 1
